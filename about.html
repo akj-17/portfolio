@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Dr Akshithanand K J</title>
+    <style>
+        /* Modern, clean styling */
+        :root {
+            --primary-color: #2d3436;
+            --secondary-color: #0984e3;
+            --background-color: #f5f5dc;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            text-align: justify;
+            background-color: var(--background-color);
+            color: var(--primary-color);
+        }
+
+        header {
+            background-color: rgba(228, 213, 228, 0.605);
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            padding: 1rem;
+            background-color: white;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: var(--secondary-color);
+        }
+
+        section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" 
+        style="width: 100px; height: 100px; 
+        border-radius: 50%; position: fixed; 
+        top: 2rem; left: 2rem;
+        z-index: 9999;">
+        <h1>Dr Akshithanand K J</h1>
+        <p>Public Health Researcher</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Publications/Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>As a dedicated medical professional with a background in Community Medicine, 
+            I am passionate about transforming public health through data-driven insights and evidence-based approaches. 
+            My journey from an MBBS graduate to a postgraduate at Maulana Azad Medical College 
+            has been driven by a core belief that focusing on prevention and health promotion is the way forward.
+            My expertise spans multiple critical domains: epidemiology, biostatistics, healthcare management, and data science. 
+            I leverage analytical skills to translate complex healthcare data into meaningful insights. 
+            With experience in medical research, peer reviews, and conference presentations, 
+            I am committed to advancing our understanding of public health challenges.
+            My academic and research focus has mainly centered on data science in public health, mental health, and palliative care. 
+            I have contributed to the field through peer-reviewed publications and national and international conference presentations. 
+            As I complete my MD in Community Medicine, I am driven to bridge research, data analysis, and practical healthcare interventions.</p>
+    </section>
+
+    <footer>
+        <p>© 2025 Akshithanand K J. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications/Projects - Dr Akshithanand K J</title>
+    <style>
+        /* Modern, clean styling */
+        :root {
+            --primary-color: #2d3436;
+            --secondary-color: #0984e3;
+            --background-color: #f5f5dc;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            text-align: justify;
+            background-color: var(--background-color);
+            color: var(--primary-color);
+        }
+
+        header {
+            background-color: rgba(228, 213, 228, 0.605);
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            padding: 1rem;
+            background-color: white;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: var(--secondary-color);
+        }
+
+        section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project-content {
+            padding: 1.5rem;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" 
+        style="width: 100px; height: 100px; 
+        border-radius: 50%; position: fixed; 
+        top: 2rem; left: 2rem;
+        z-index: 9999;">
+        <h1>Dr Akshithanand K J</h1>
+        <p>Public Health Researcher</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Publications/Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="projects">
+        <h2>Publications/Projects</h2>
+        <div class="project-grid">
+            <article class="project-card">
+                <div class="project-content">
+                    <h3>Updation of B G Prasad scale</h3>
+                    <p>The B G Prasad scale for assessing the socioeconomic status of families is based on the per capita income of the family, and the values needs to be updated regularly to adjust for inflation.</p>
+                        <a href="https://link.springer.com/article/10.1007/s12098-024-05131-z" style="text-decoration: none; color: var(--secondary-color); font-weight: bold;">Read More</a>
+                        <img src="ses.png" alt="Project 1"
+                        style="width: 200px;
+                        height: 200px;
+                        object-fit: fill;
+                       border-radius: 0%; 
+                       margin-bottom: 1rem;
+                       display: block; /* Make image a block-level element */
+                        margin-left: auto; /* Auto left margin */
+                        margin-right: auto; /* Auto right margin */">
+                        </div>
+            </article>
+            <article class="project-card">
+                <div class="project-content">
+                    <h3>A review of National Suicide Prevention Strategy</h3>
+                    <p>This article reviews the national suicide prevention strategy of India.</p>
+                        <a href="https://natboard.edu.in/ejournal/articledtl?x=eUZzbStTYnB4OHlyOG11MTgvWWg0QT09" style="text-decoration: none; color: var(--secondary-color); font-weight: bold;">Read More</a>
+                        <img src="nsps.jpg" alt="Project 1"
+                        style="width: 200px;
+                        height: 200px;
+                        object-fit: fill;
+                       border-radius: 25%; 
+                       margin-bottom: 1rem;
+                       display: block; /* Make image a block-level element */
+                        margin-left: auto; /* Auto left margin */
+                        margin-right: auto; /* Auto right margin */">
+                </div>
+            </article>
+            <article class="project-card">
+                <div class="project-content">
+                    <h3>Anxiety among adolescents</h3>
+                    <p>A cross-sectional study was conducted in an urban area of delhi to study the prevalnece of anxiety among adolescents</p>
+                        <a href="https://njcmindia.com/index.php/file/article/view/4771" style="text-decoration: none; color: var(--secondary-color); font-weight: bold;">Read More</a>
+                        <img src="adolmh.jpeg" alt="Project 1"
+                        style="width: 200px;
+                        height: 200px;
+                        object-fit: fill;
+                       border-radius: 50%; 
+                       margin-bottom: 1rem;
+                       display: block; /* Make image a block-level element */
+                        margin-left: auto; /* Auto left margin */
+                        margin-right: auto; /* Auto right margin */">
+                </div>
+            </article>
+            <article class="project-card">
+                <div class="project-content">
+                    <h3>Quality Improvement Project</h3>
+                    <p>A quality improvement project was carried out to 
+                        evaluate and improve the prescription writing practices among 
+                        medical interns. A baseline survey was done, and following root cause analysis,
+                        interventions were planned and through repeated PDSA cycles 
+                        these were carried out. The outcomes were 
+                        reassessed to study the progress.</p>
+                        <!-- <a href="project1-details.html" style="text-decoration: none; color: var(--secondary-color); font-weight: bold;">Read More</a> -->
+                        <img src="pdsa.png" alt="Project 1"
+                        style="width: 200px;
+                        height: 200px;
+                        object-fit: cover;
+                       border-radius: 50%; 
+                       margin-bottom: 1rem;
+                       display: block; /* Make image a block-level element */
+                        margin-left: auto; /* Auto left margin */
+                        margin-right: auto; /* Auto right margin */">
+                </div>
+            </article>
+            <article class="project-card">
+                <div class="project-content">
+                    <h3>Women empowerment and mental health</h3>
+                    <p>As a part of my postgraduate thesis project,
+                        a cross sectional study was carried out 
+                        among married women of delhi to 
+                        study their empowerment and mental health status.
+                        The various sociodemographic and economic factors 
+                        influencing women empowerment and mental health status were studied,
+                        also the association between the both were also studied.</p>
+                        <!-- <a href="project1-details.html" style="text-decoration: none; color: var(--secondary-color); font-weight: bold;">Read More</a> -->
+                        <img src="we.jpg" alt="Project 2"
+                style="width: 200px;
+                height: 250px;
+                object-fit: fill;
+               border-radius: 50%; 
+               margin-bottom: 1rem;
+               display: block; /* Make image a block-level element */
+                margin-left: auto; /* Auto left margin */
+                margin-right: auto; /* Auto right margin */">
+                </div>
+            </article>
+            <article class="project-card">
+                <div class="project-content">
+                    <h3>Home based palliative care </h3>
+                    <p>A descriptive cross-sectional study was cnducted in
+                        an urban area of Delhi. In this study nearly 43,000 residents in the study area 
+                        were screened for the need for homebased palliative care by the 
+                        field research workers. After the initial screening, trained physicians did 
+                        an in depth survey and screening to identify the need for Home based palliative care
+                        in the study population.
+                    </p>
+                    <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5137599" style="text-decoration: none; color: var(--secondary-color); font-weight: bold;">Read More</a>
+                    <img src="hbpc.jpeg" alt="Project 2"
+            style="width: 200px;
+            height: 200px;
+            object-fit: fill;
+           border-radius: 50%; 
+           margin-bottom: 1rem;
+           display: block; /* Make image a block-level element */
+            margin-left: auto; /* Auto left margin */
+            margin-right: auto; /* Auto right margin */">
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Akshithanand K J. All rights reserved.</p>
+    </footer>
+</body>
+</html>

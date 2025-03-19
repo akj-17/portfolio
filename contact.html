@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Dr Akshithanand K J</title>
+    <style>
+        /* Modern, clean styling */
+        :root {
+            --primary-color: #2d3436;
+            --secondary-color: #0984e3;
+            --background-color: #f5f5dc;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            text-align: justify;
+            background-color: var(--background-color);
+            color: var(--primary-color);
+        }
+
+        header {
+            background-color: rgba(228, 213, 228, 0.605);
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            padding: 1rem;
+            background-color: white;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: var(--secondary-color);
+        }
+
+        section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" 
+        style="width: 100px; height: 100px; 
+        border-radius: 50%; position: fixed; 
+        top: 2rem; left: 2rem;
+        z-index: 9999;">
+        <h1>Dr Akshithanand K J</h1>
+        <p>Public Health Researcher</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Publications/Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <div class="contact-links">
+            <!-- Email Link with Icon -->
+            <a href="mailto:akshisainik@gmail.com" style="text-decoration: none; color: var(--secondary-color); font-weight: bold;">
+                <img src="gmail.png" alt="Email" style="width: 100px; height: 100px; margin-right: 8px; border-radius: 50%;">
+            </a>
+            <!-- LinkedIn Link with Icon -->
+            <a href="https://www.linkedin.com/in/akshithanand-k-j-404266178/" style="text-decoration: none; color: var(--secondary-color); font-weight: bold;">
+                <img src="linkedin.webp" alt="LinkedIn" style="width: 100px; height: 100px; margin-right: 8px; border-radius: 50%;">
+            </a>
+            <!-- GitHub Link with Icon -->
+            <a href="https://github.com/akj-17" style="text-decoration: none; color: var(--secondary-color); font-weight: bold;">
+                <img src="github.png" alt="GitHub" style="width: 100px; height: 100px; margin-right: 8px; border-radius: 50%;">
+            </a>
+            <!-- ResearchGate Link with Icon -->
+            <a href="https://www.researchgate.net/profile/Akshithanand-K-J" style="text-decoration: none; color: var(--secondary-color); font-weight: bold;">
+                <img src="rg.png" alt="ResearchGate" style="width: 100px; height: 100px; margin-right: 8px; border-radius: 50%;">
+            </a>
+            <!-- Instagram Link with Icon -->
+            <a href="https://instagram.com/akshi.kj/" style="text-decoration: none; color: var(--secondary-color); font-weight: bold;">
+                <img src="ig.webp" alt="Instagram" style="width: 100px; height: 100px; margin-right: 8px; border-radius: 50%;">
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Akshithanand K J. All rights reserved.</p>
+    </footer>
+</body>
+</html>
