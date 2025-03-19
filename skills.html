@@ -1,3 +1,4 @@
+<!-- SKILLS.HTML -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,17 +21,30 @@
             text-align: justify;
             background-color: var(--background-color);
             color: var(--primary-color);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
 
         header {
             background-color: rgba(228, 213, 228, 0.605);
-            padding: 2rem;
+            padding: 2rem 1rem;
             text-align: center;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
+        .logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            z-index: 99;
+        }
+
         nav {
-            padding: 1rem;
+            padding: 0.75rem;
             background-color: white;
             position: sticky;
             top: 0;
@@ -43,13 +57,13 @@
             margin: 0;
             display: flex;
             justify-content: center;
-            gap: 2rem;
+            gap: 1.5rem;
         }
 
         nav a {
             text-decoration: none;
             color: var(--primary-color);
-            font-weight: 500;
+            font-weight: 600;
         }
 
         nav a:hover {
@@ -57,15 +71,17 @@
         }
 
         section {
-            padding: 4rem 2rem;
+            padding: 2rem 1rem;
             max-width: 1200px;
             margin: 0 auto;
+            flex: 1;
         }
 
         .skills-list {
             display: flex;
             flex-wrap: wrap;
             gap: 1rem;
+            margin-top: 1.5rem;
         }
 
         .skill-tag {
@@ -80,28 +96,48 @@
             background-color: var(--primary-color);
             color: white;
             text-align: center;
-            padding: 2rem;
-            margin-top: 4rem;
+            padding: 1rem;
+            margin-top: auto;
+        }
+        
+        h1 {
+            font-size: 2rem;
+            margin: 0.5rem 0;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            margin: 0.5rem 0;
         }
 
         @media (max-width: 768px) {
+            .logo {
+                width: 60px;
+                height: 60px;
+                top: 0.5rem;
+                left: 0.5rem;
+            }
+            
+            h1 {
+                font-size: 1.75rem;
+            }
+            
+            h2 {
+                font-size: 1.1rem;
+            }
+            
             nav ul {
-                flex-direction: column;
-                text-align: center;
-                gap: 1rem;
+                flex-wrap: wrap;
+                gap: 0.75rem 1.5rem;
             }
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Logo" 
-        style="width: 100px; height: 100px; 
-        border-radius: 50%; position: fixed; 
-        top: 2rem; left: 2rem;
-        z-index: 9999;">
+        <img src="logo.png" alt="Logo" class="logo">
         <h1>Dr Akshithanand K J</h1>
-        <p>Public Health Researcher</p>
+        <h2>Public Health Researcher</h2>
     </header>
 
     <nav>

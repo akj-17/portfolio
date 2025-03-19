@@ -1,3 +1,4 @@
+<!-- PROJECTS.HTML -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,17 +21,30 @@
             text-align: justify;
             background-color: var(--background-color);
             color: var(--primary-color);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
 
         header {
             background-color: rgba(228, 213, 228, 0.605);
-            padding: 2rem;
+            padding: 2rem 1rem;
             text-align: center;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
+        .logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            z-index: 99;
+        }
+
         nav {
-            padding: 1rem;
+            padding: 0.75rem;
             background-color: white;
             position: sticky;
             top: 0;
@@ -43,13 +57,13 @@
             margin: 0;
             display: flex;
             justify-content: center;
-            gap: 2rem;
+            gap: 1.5rem;
         }
 
         nav a {
             text-decoration: none;
             color: var(--primary-color);
-            font-weight: 500;
+            font-weight: 600;
         }
 
         nav a:hover {
@@ -57,16 +71,17 @@
         }
 
         section {
-            padding: 4rem 2rem;
+            padding: 2rem 1rem;
             max-width: 1200px;
             margin: 0 auto;
+            flex: 1;
         }
 
         .project-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            padding: 2rem 0;
+            gap: 1.5rem;
+            padding: 1.5rem 0;
         }
 
         .project-card {
@@ -77,9 +92,12 @@
         }
 
         .project-card img {
-            width: 100%;
+            display: block;
+            width: 200px;
             height: 200px;
             object-fit: cover;
+            margin: 0 auto 1rem auto;
+            border-radius: 50%;
         }
 
         .project-content {
@@ -90,28 +108,52 @@
             background-color: var(--primary-color);
             color: white;
             text-align: center;
-            padding: 2rem;
-            margin-top: 4rem;
+            padding: 1rem;
+            margin-top: auto;
+        }
+        
+        h1 {
+            font-size: 2rem;
+            margin: 0.5rem 0;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            margin: 0.5rem 0;
         }
 
         @media (max-width: 768px) {
+            .logo {
+                width: 60px;
+                height: 60px;
+                top: 0.5rem;
+                left: 0.5rem;
+            }
+            
+            h1 {
+                font-size: 1.75rem;
+            }
+            
+            h2 {
+                font-size: 1.1rem;
+            }
+            
             nav ul {
-                flex-direction: column;
-                text-align: center;
-                gap: 1rem;
+                flex-wrap: wrap;
+                gap: 0.75rem 1.5rem;
+            }
+            
+            .project-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Logo" 
-        style="width: 100px; height: 100px; 
-        border-radius: 50%; position: fixed; 
-        top: 2rem; left: 2rem;
-        z-index: 9999;">
+        <img src="logo.png" alt="Logo" class="logo">
         <h1>Dr Akshithanand K J</h1>
-        <p>Public Health Researcher</p>
+        <h2>Public Health Researcher</h2>
     </header>
 
     <nav>
@@ -131,113 +173,46 @@
                 <div class="project-content">
                     <h3>Updation of B G Prasad scale</h3>
                     <p>The B G Prasad scale for assessing the socioeconomic status of families is based on the per capita income of the family, and the values needs to be updated regularly to adjust for inflation.</p>
-                        <a href="https://link.springer.com/article/10.1007/s12098-024-05131-z" style="text-decoration: none; color: var(--secondary-color); font-weight: bold;">Read More</a>
-                        <img src="ses.png" alt="Project 1"
-                        style="width: 200px;
-                        height: 200px;
-                        object-fit: fill;
-                       border-radius: 0%; 
-                       margin-bottom: 1rem;
-                       display: block; /* Make image a block-level element */
-                        margin-left: auto; /* Auto left margin */
-                        margin-right: auto; /* Auto right margin */">
-                        </div>
+                    <a href="https://link.springer.com/article/10.1007/s12098-024-05131-z" style="text-decoration: none; color: var(--secondary-color); font-weight: bold;">Read More</a>
+                    <img src="ses.png" alt="Project 1">
+                </div>
             </article>
             <article class="project-card">
                 <div class="project-content">
                     <h3>A review of National Suicide Prevention Strategy</h3>
                     <p>This article reviews the national suicide prevention strategy of India.</p>
-                        <a href="https://natboard.edu.in/ejournal/articledtl?x=eUZzbStTYnB4OHlyOG11MTgvWWg0QT09" style="text-decoration: none; color: var(--secondary-color); font-weight: bold;">Read More</a>
-                        <img src="nsps.jpg" alt="Project 1"
-                        style="width: 200px;
-                        height: 200px;
-                        object-fit: fill;
-                       border-radius: 25%; 
-                       margin-bottom: 1rem;
-                       display: block; /* Make image a block-level element */
-                        margin-left: auto; /* Auto left margin */
-                        margin-right: auto; /* Auto right margin */">
+                    <a href="https://natboard.edu.in/ejournal/articledtl?x=eUZzbStTYnB4OHlyOG11MTgvWWg0QT09" style="text-decoration: none; color: var(--secondary-color); font-weight: bold;">Read More</a>
+                    <img src="nsps.jpg" alt="Project 2" style="border-radius: 25%;">
                 </div>
             </article>
             <article class="project-card">
                 <div class="project-content">
                     <h3>Anxiety among adolescents</h3>
                     <p>A cross-sectional study was conducted in an urban area of delhi to study the prevalnece of anxiety among adolescents</p>
-                        <a href="https://njcmindia.com/index.php/file/article/view/4771" style="text-decoration: none; color: var(--secondary-color); font-weight: bold;">Read More</a>
-                        <img src="adolmh.jpeg" alt="Project 1"
-                        style="width: 200px;
-                        height: 200px;
-                        object-fit: fill;
-                       border-radius: 50%; 
-                       margin-bottom: 1rem;
-                       display: block; /* Make image a block-level element */
-                        margin-left: auto; /* Auto left margin */
-                        margin-right: auto; /* Auto right margin */">
+                    <a href="https://njcmindia.com/index.php/file/article/view/4771" style="text-decoration: none; color: var(--secondary-color); font-weight: bold;">Read More</a>
+                    <img src="adolmh.jpeg" alt="Project 3">
                 </div>
             </article>
             <article class="project-card">
                 <div class="project-content">
                     <h3>Quality Improvement Project</h3>
-                    <p>A quality improvement project was carried out to 
-                        evaluate and improve the prescription writing practices among 
-                        medical interns. A baseline survey was done, and following root cause analysis,
-                        interventions were planned and through repeated PDSA cycles 
-                        these were carried out. The outcomes were 
-                        reassessed to study the progress.</p>
-                        <!-- <a href="project1-details.html" style="text-decoration: none; color: var(--secondary-color); font-weight: bold;">Read More</a> -->
-                        <img src="pdsa.png" alt="Project 1"
-                        style="width: 200px;
-                        height: 200px;
-                        object-fit: cover;
-                       border-radius: 50%; 
-                       margin-bottom: 1rem;
-                       display: block; /* Make image a block-level element */
-                        margin-left: auto; /* Auto left margin */
-                        margin-right: auto; /* Auto right margin */">
+                    <p>A quality improvement project was carried out to evaluate and improve the prescription writing practices among medical interns. A baseline survey was done, and following root cause analysis, interventions were planned and through repeated PDSA cycles these were carried out. The outcomes were reassessed to study the progress.</p>
+                    <img src="pdsa.png" alt="Project 4">
                 </div>
             </article>
             <article class="project-card">
                 <div class="project-content">
                     <h3>Women empowerment and mental health</h3>
-                    <p>As a part of my postgraduate thesis project,
-                        a cross sectional study was carried out 
-                        among married women of delhi to 
-                        study their empowerment and mental health status.
-                        The various sociodemographic and economic factors 
-                        influencing women empowerment and mental health status were studied,
-                        also the association between the both were also studied.</p>
-                        <!-- <a href="project1-details.html" style="text-decoration: none; color: var(--secondary-color); font-weight: bold;">Read More</a> -->
-                        <img src="we.jpg" alt="Project 2"
-                style="width: 200px;
-                height: 250px;
-                object-fit: fill;
-               border-radius: 50%; 
-               margin-bottom: 1rem;
-               display: block; /* Make image a block-level element */
-                margin-left: auto; /* Auto left margin */
-                margin-right: auto; /* Auto right margin */">
+                    <p>As a part of my postgraduate thesis project, a cross sectional study was carried out among married women of delhi to study their empowerment and mental health status. The various sociodemographic and economic factors influencing women empowerment and mental health status were studied, also the association between the both were also studied.</p>
+                    <img src="we.jpg" alt="Project 5" style="height: 250px;">
                 </div>
             </article>
             <article class="project-card">
                 <div class="project-content">
-                    <h3>Home based palliative care </h3>
-                    <p>A descriptive cross-sectional study was cnducted in
-                        an urban area of Delhi. In this study nearly 43,000 residents in the study area 
-                        were screened for the need for homebased palliative care by the 
-                        field research workers. After the initial screening, trained physicians did 
-                        an in depth survey and screening to identify the need for Home based palliative care
-                        in the study population.
-                    </p>
+                    <h3>Home based palliative care</h3>
+                    <p>A descriptive cross-sectional study was cnducted in an urban area of Delhi. In this study nearly 43,000 residents in the study area were screened for the need for homebased palliative care by the field research workers. After the initial screening, trained physicians did an in depth survey and screening to identify the need for Home based palliative care in the study population.</p>
                     <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5137599" style="text-decoration: none; color: var(--secondary-color); font-weight: bold;">Read More</a>
-                    <img src="hbpc.jpeg" alt="Project 2"
-            style="width: 200px;
-            height: 200px;
-            object-fit: fill;
-           border-radius: 50%; 
-           margin-bottom: 1rem;
-           display: block; /* Make image a block-level element */
-            margin-left: auto; /* Auto left margin */
-            margin-right: auto; /* Auto right margin */">
+                    <img src="hbpc.jpeg" alt="Project 6">
                 </div>
             </article>
         </div>
