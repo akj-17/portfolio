@@ -50,6 +50,26 @@
             margin-bottom: 1rem;
         }
 
+        .project-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .project-card img {
+            display: block;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin: 0 auto 1rem auto;
+            border-radius: 50%;
+        }
+
+        .project-content {
+            padding: 1.5rem;
+        }
+
         nav {
             padding: 0.75rem;
             background-color: white;
@@ -148,8 +168,10 @@
     <main>
         <section id="about">
             <h2>About Me</h2>
-            <p>
-                I am a doctor trained in Community Medicine who found my way into palliative care, 
+            <article class="project-card">
+                <div class="project-content">   
+                    <p>
+                        I am a doctor trained in Community Medicine who found my way into palliative care, 
                 and quite passionate about the use of data science in public health. While working 
                 in communities, urban settlements, and now in clinical palliative care, I kept encountering 
                 the same thing over and over agains, suffering across different domains. They live with 
@@ -166,7 +188,9 @@
                 I am particularly interested in how data science can help design better, more integrated care models for people 
                 living with life-limitng illness where palliative care is not an afterthought but an essential component of 
                 health system planning.
-            </p>
+                    </p>
+                </div>
+            </article>
         </section>
     </main>
 
